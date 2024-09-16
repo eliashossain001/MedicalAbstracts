@@ -53,6 +53,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Citing the Dataset
 
 If you use this dataset in your research, please cite it as follows:
+```
 @misc{hossain2024medical,
   author       = {Elias Hossain and Tasfia Nuzhat},
   title        = {Medical Abstracts Dataset},
@@ -61,6 +62,6 @@ If you use this dataset in your research, please cite it as follows:
   note         = {GitHub}
 }
 
-
+```
 
 
