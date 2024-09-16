@@ -57,9 +57,10 @@ If you use this dataset in your research, please cite it as follows:
   author       = {Elias Hossain and Tasfia Nuzhat},
   title        = {Medical Abstracts Dataset},
   year         = {2024},
-  url          = {https://github.com/eliashossain001/MedicalAbstracts/blob/main/MedicalAbstracts.csv},
+  url          = {https://github.com/eliashossain001/MedicalAbstracts/tree/main},
   note         = {GitHub}
 }
+
 
 
 
