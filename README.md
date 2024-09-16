@@ -35,7 +35,7 @@ The dataset can be used for various purposes, including:
 
 ## Data Access
 
-You can download the dataset from the following link: [Download Cancer Abstract Dataset](<your_download_link>).
+You can download the dataset from the following link: [Download Cancer Abstract Dataset](https://github.com/eliashossain001/MedicalAbstracts/raw/main/MedicalAbstracts.csv).
 
 ## License
 
