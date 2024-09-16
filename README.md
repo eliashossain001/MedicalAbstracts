@@ -39,7 +39,7 @@ You can download the dataset from the following link: [Download Cancer Abstract 
 
 ## License
 
-The dataset is provided for research purposes under the [MIT License](LICENSE). Please review the license file for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Citing the Dataset
 
