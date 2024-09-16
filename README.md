@@ -6,6 +6,15 @@ Welcome to the Cancer Abstract Dataset repository! This dataset provides a compr
 
 The Cancer Abstract Dataset contains abstracts categorized by different cancer types. The dataset is intended for research purposes and provides a foundation for text mining, natural language processing (NLP), and machine learning applications in cancer research.
 
+## Contributors
+
+- **Elias Hossain**  
+  PhD Student, Mississippi State University, USA
+
+- **Tasfia Nuzhat**  
+  Graduate Student, Chittagong Independent University, Bangladesh
+
+
 ### Dataset Details
 
 - **Total Samples**: 1,874
