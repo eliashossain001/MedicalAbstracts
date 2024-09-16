@@ -53,4 +53,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Citing the Dataset
 
 If you use this dataset in your research, please cite it as follows:
+@misc{hossain2024medical,
+  author       = {Elias Hossain and Tasfia Nuzhat},
+  title        = {Medical Abstracts Dataset},
+  year         = {2024},
+  url          = {https://github.com/eliashossain001/MedicalAbstracts/blob/main/MedicalAbstracts.csv},
+  note         = {GitHub}
+}
+
+
 
