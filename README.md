@@ -9,7 +9,7 @@ The Cancer Abstract Dataset contains abstracts categorized by different cancer t
 ## Contributors
 
 - **Elias Hossain**  
-  PhD Student, Mississippi State University, USA
+  Graduate Student, Mississippi State University, USA
 
 - **Tasfia Nuzhat**  
   Graduate Student, Chittagong Independent University, Bangladesh
