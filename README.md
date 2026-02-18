@@ -4,7 +4,7 @@ language:
 license: mit
 pretty_name: Cancer Abstract Dataset
 size_categories:
-- 1K\<n\<10K
+- 1K<n<10K
 tags:
 - biomedical
 - oncology
@@ -15,133 +15,118 @@ tags:
 - document-classification
 task_categories:
 - text-classification
-- text-mining
 ---
 
 # Cancer Abstract Dataset
 
-## Dataset Summary
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41598--026--39894--6-blue)](https://doi.org/10.1038/s41598-026-39894-6)
+[![Dataset](https://img.shields.io/badge/HuggingFace-Dataset-orange)](https://huggingface.co/datasets/EliasHossain/CancerAbstracts)
 
-The **Cancer Abstract Dataset** is a curated collection of biomedical
-research abstracts categorized by cancer type. It was developed to
-support research in document classification, low-resource biomedical
-NLP, and graph-based deep learning approaches.
+## Overview
 
-This dataset was introduced in the following publication:
+The **Cancer Abstract Dataset** is a curated collection of 1,874 biomedical research abstracts annotated by cancer type. Developed to support document classification, low-resource biomedical NLP, and graph-based deep learning research, this dataset serves as the benchmark resource for the following peer-reviewed publication:
 
-> Hossain, E., Nuzhat, T., Masum, S., et al.\
-> **R-GAT: cancer document classification leveraging graph-based
-> residual network for scenarios with limited data.**\
-> *Scientific Reports*, 16, 6582 (2026).\
+> Hossain, E., Nuzhat, T., Masum, S., et al.
+> **R-GAT: Cancer Document Classification Leveraging Graph-Based Residual Network for Scenarios with Limited Data.**
+> *Scientific Reports*, 16, 6582 (2026).
 > https://doi.org/10.1038/s41598-026-39894-6
 
-------------------------------------------------------------------------
+---
 
 ## Dataset Description
 
-This dataset contains categorized research abstracts related to major
-cancer types. It is suitable for:
+| Property        | Value                          |
+|----------------|--------------------------------|
+| Total Samples   | 1,874 abstracts                |
+| Format          | CSV                            |
+| Language        | English                        |
+| Domain          | Biomedical / Oncology          |
+| Task            | Text Classification            |
+| License         | MIT                            |
 
--   Biomedical text classification
--   Topic modeling
--   Low-resource learning experiments
--   Graph-based NLP methods
--   Transformer-based fine-tuning
--   Benchmarking uncertainty-aware LLMs
+### Schema
 
-------------------------------------------------------------------------
+| Field      | Type   | Description                      |
+|------------|--------|----------------------------------|
+| `Abstract` | string | Full research abstract text      |
+| `Category` | string | Cancer type label (see below)    |
 
-## Dataset Structure
+### Class Labels
 
-### Total Samples
+| Label            | Description                          |
+|------------------|--------------------------------------|
+| `Lung_Cancer`    | Abstracts related to lung cancer     |
+| `Thyroid_Cancer` | Abstracts related to thyroid cancer  |
+| `Colon_Cancer`   | Abstracts related to colon cancer    |
+| `Generic`        | General oncology abstracts           |
 
-**1,874 abstracts**
+---
 
-### Format
+## Usage
 
-CSV (Comma-Separated Values)
-
-### Fields
-
-  Field        Description
-  ------------ -----------------------------
-  `Abstract`   Full research abstract text
-  `Category`   Cancer type label
-
-### Categories
-
--   `Lung_Cancer`
--   `Thyroid_Cancer`
--   `Colon_Cancer`
--   `Generic`
-
-------------------------------------------------------------------------
-
-## Example Usage
-
-``` python
+```python
 from datasets import load_dataset
 
 dataset = load_dataset("EliasHossain/CancerAbstracts")
-
 print(dataset["train"][0])
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Intended Use
 
-The dataset is intended for:
+This dataset is designed for academic and research purposes, including:
 
--   Supervised text classification
--   Graph neural network research
--   Transformer-based fine-tuning
--   Biomedical NLP benchmarking
--   Limited-data learning evaluation
+- Supervised biomedical text classification
+- Graph neural network (GNN) research
+- Transformer-based fine-tuning in low-resource settings
+- Biomedical NLP benchmarking
+- Uncertainty-aware language model evaluation
 
-This dataset is **not intended for clinical decision-making**.
+> **⚠️ Important:** This dataset is strictly intended for research use and is **not suitable for clinical decision-making or diagnostic purposes**.
 
-------------------------------------------------------------------------
+---
 
-## Data Collection and Processing
+## Data Collection & Ethics
 
-Abstracts were curated and categorized for research purposes in
-oncology-related document classification experiments. Standard
-preprocessing steps were applied to ensure formatting consistency.
+Abstracts were systematically curated from publicly available biomedical literature and annotated by cancer type. Standard preprocessing was applied to ensure formatting consistency across samples.
 
-No personally identifiable information (PII) or protected health
-information (PHI) is included.
+- No personally identifiable information (PII) is included.
+- No protected health information (PHI) is included.
+- All source material is publicly available.
 
-------------------------------------------------------------------------
+---
 
 ## Citation
 
-If you use this dataset, please cite:
+If you use this dataset in your research, please cite the following paper:
 
-``` bibtex
+```bibtex
 @article{hossain2026rgat,
-  title={R-GAT: cancer document classification leveraging graph-based residual network for scenarios with limited data},
-  author={Hossain, Elias and Nuzhat, Tasfia and Masum, S. and others},
-  journal={Scientific Reports},
-  volume={16},
-  pages={6582},
-  year={2026},
-  doi={10.1038/s41598-026-39894-6}
+  title     = {R-GAT: Cancer Document Classification Leveraging Graph-Based Residual Network for Scenarios with Limited Data},
+  author    = {Hossain, Elias and Nuzhat, Tasfia and Masum, S. and others},
+  journal   = {Scientific Reports},
+  volume    = {16},
+  pages     = {6582},
+  year      = {2026},
+  publisher = {Nature Publishing Group},
+  doi       = {10.1038/s41598-026-39894-6},
+  url       = {https://doi.org/10.1038/s41598-026-39894-6}
 }
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Contributors
 
--   **Elias Hossain**\
-    Mississippi State University, USA
+| Name | Affiliation |
+|------|-------------|
+| **Elias Hossain** | Mississippi State University, USA |
+| **Tasfia Nuzhat** | Chittagong Independent University, Bangladesh |
 
--   **Tasfia Nuzhat**\
-    Chittagong Independent University, Bangladesh
-
-------------------------------------------------------------------------
+---
 
 ## License
 
-MIT License
+This dataset is released under the [MIT License](https://opensource.org/licenses/MIT). See `LICENSE` for details.
