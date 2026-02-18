@@ -21,7 +21,8 @@ task_categories:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41598--026--39894--6-blue)](https://doi.org/10.1038/s41598-026-39894-6)
-[![Dataset](https://img.shields.io/badge/HuggingFace-Dataset-orange)](https://huggingface.co/datasets/EliasHossain/CancerAbstracts)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-EliasHossain%2FCancerAbstracts-orange)](https://huggingface.co/datasets/EliasHossain/CancerAbstracts)
+[![Dataset Size](https://img.shields.io/badge/Samples-1%2C874%20Abstracts-green)](https://huggingface.co/datasets/EliasHossain/CancerAbstracts)
 
 ## Overview
 
@@ -31,6 +32,14 @@ The **Cancer Abstract Dataset** is a curated collection of 1,874 biomedical rese
 > **R-GAT: Cancer Document Classification Leveraging Graph-Based Residual Network for Scenarios with Limited Data.**
 > *Scientific Reports*, 16, 6582 (2026).
 > https://doi.org/10.1038/s41598-026-39894-6
+
+---
+
+## 🤗 Access on HuggingFace
+
+The dataset is publicly available on the HuggingFace Hub:
+
+**[https://huggingface.co/datasets/EliasHossain/CancerAbstracts](https://huggingface.co/datasets/EliasHossain/CancerAbstracts)**
 
 ---
 
@@ -68,6 +77,7 @@ The **Cancer Abstract Dataset** is a curated collection of 1,874 biomedical rese
 ```python
 from datasets import load_dataset
 
+# Load directly from HuggingFace Hub
 dataset = load_dataset("EliasHossain/CancerAbstracts")
 print(dataset["train"][0])
 ```
